@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>William Boswell</title>
+    <!-- Thumbnail image of Me  -->
+    <link rel="shortcut icon" href="Images/me2.jpg">
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="/Users/doujones/Downloads/portfolio-setup/fontawesome-free-5.12.1-web/css/all.min.css"
+    >
+    <link rel="stylesheet" href="./Blog.css">
+    <link rel="stylesheet" href="./styles.css">
+    </head>
+  <body>
+      <!--navbar-->
+      <nav class="nav top" id="nav">
+        <div class="nav-center">
+        <!--navbar header-->
+        <div class="nav-header">
+          <h3 class="name-nav">William Boswell</h3>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Home Page</a>
+        </li>
+        <li>
+          <a href="Project.html">Projects</a>
+        </li>
+        <li>
+          <a href="biography.html">About</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+      </div>
+       </nav>
+      <!--Nav Button End-->
+      <!-- Blog Begins-->
+      <section id="blog-section">
+        <div class="container">
+          <div class="title">
+            <h1>Javascript Frameworks</h1>
+          </div>
+          <div class="blog-container">
+          <!--Post Beginning-->
+            <a href="http://www.reactjs.org" class="post">
+              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+               <div class="details">
+               <h4>ReactJS</h4>
+               <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug. Component-Based
+               Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
+            </div>
+            <div class="more">
+               <div class="button">
+               Website
+               </div>
+              </div>
+            </a>
+            <!--End of Post-->
+            <!--Post Beginning-->
+            <a href="https://angular.io/" class="post">
+              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+               <div class="details">
+               <h4>AngularJS</h4>
+               <p>Angular is an app-design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+               <p>
+               Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering. Angular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model.</p> 
+            </div>
+            <div class="more">
+               <div class="button">
+                Website
+               </div>
+              </div>
+            </a>
+            <!--End of Post-->
+            <!--Post Beginning-->
+            <a href="https://nodejs.dev/" class="post">
+              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+               <div class="details">
+               <h4>Nodejs</h4>
+               <p>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</p>
+               <p>
+               Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project! Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. </p> 
+            </div>
+            <div class="more">
+               <div class="button">
+               Website
+               </div>
+              </div>
+            </a>
+            <!--End of Post-->
+            <!--Post Beginning-->
+            <a href="https://vuejs.org/" class="post">
+              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+               <div class="details">
+               <h4>VueJs</h4>
+               <p>Vue JS is a Javascript MVC Framework which is used to develop a UI layer of Web Applications. React JS is used for developing user interfaces of Web Applications and Mobile Applications. Not only this it is also used for developing Native Applications and also render on Server as a Node.</p> 
+            </div>
+            <div class="more">
+               <div class="button">
+                Website
+               </div>
+              </div>
+            </a>
+            <!--End of Post-->
+          </div>
+        </div>
+      <section>
+    <!-- Blog End-->
+    <footer>
+      <p>William Boswell &copy; All Rights Reserved</p><span id="date"></span>
+    </footer>
+    <script>
+    // set year
+    const date = document.querySelector("#date");
+    date.innerHTML = new Date().getFullYear();
+    </script>
+    </body>
+    </html>

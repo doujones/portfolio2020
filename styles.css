@@ -54,11 +54,17 @@ img {
   display: block;
 }
 
+.app{
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  font-size: 1.0rem;
+}
+
 h1,h2,h3,h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.85;
   margin-bottom: 0.79rem;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 h1{
@@ -71,7 +77,9 @@ h3{
   font-size: 1.4rem;
 }
 h4{
-  font-size: 0.9rem;
+  font-size: 1.0rem;
+  color: var(--clr-midnight);
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 p{
@@ -298,9 +306,9 @@ Navbar on mobile devices
   background: var(--clr-yellow);
 }
 
-.nav.top{
-  background: transparent;
-}
+/* .nav.top{
+  background: rgb(172, 32, 32);
+} */
 
 /* To center links on navbar */
 .nav-center{
@@ -322,10 +330,11 @@ Navbar on mobile devices
 
 .nav-btn{
   background: transparent;
-  border-color: transparent;
+  border-color: rgb(179, 18, 85);
   color: var(--clr-midnight);
   font-size: 2rem;
   cursor: pointer;
+  z-index: 4;
   justify-self: end; 
   animation: spring 2s ease-in-out infinite;
   /* Button all the way on the end */
@@ -394,6 +403,12 @@ Navbar on mobile devices
   height: 100%;
 }
 
+/* 
+========================================
+Footer
+========================================
+*/
+
 .footer{
   padding-bottom: 2rem;
   background: rgb(118, 116, 153);
@@ -412,6 +427,7 @@ Navbar on mobile devices
 .footer .social-icons{
   margin-bottom: .75rem;
   place-items: center;
+  transform: scale(1.5);
 }
 
 .footer .social-icon{
@@ -422,6 +438,7 @@ Navbar on mobile devices
 .footer .social-icon:hover {
   color: var(--clr-orange);
   place-items: center;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px){
@@ -476,6 +493,7 @@ Navbar on laptops
   }
   .nav-links a:hover{
     color: var(--clr-midnight);
+    transform: scale(1.5);
   }
   .nav-center{
     display: grid;
@@ -506,7 +524,7 @@ Sidebar
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--clr-orange);
+  background: var(--clr-grey-light);
   z-index: 4;
   display: grid;
   place-items: center;
@@ -535,6 +553,7 @@ Sidebar
 
 .sidebar-links a:hover{
   color: var(--clr-primary-light);
+  transform: scale(1.5);
 }
 
 .social-icons{
@@ -544,6 +563,7 @@ Sidebar
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
   list-style-type: none;
+  transform: scale(1.5);
 }
 
 .social-icon{
@@ -551,10 +571,15 @@ Sidebar
   color: var(--clr-midnight);
   transition: var(--transition);
   list-style-type: none;
+  transform: scale(1.5);
 }
 
 .social-icon:hover{
-  color: var(--clr-grey-light);
+  color: rgb(83, 6, 32);
+  transition: var(--transition);
+  height: 100px;
+  width: 100px;
+  transform: scale(1.5);
 }
 
 .close-btn{
