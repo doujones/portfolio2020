@@ -126,7 +126,7 @@ text-transform: uppercase;
 }
 
 #blog-section .blog-container .post .details{
-  background: var(--clr-white);
+  background: var(--clr-grey-light);
   padding: 35px;
   position: absolute;
   top: 100%;
@@ -198,6 +198,17 @@ footer{
   margin-top: 10px;
   background: var(--clr-yellow);
   text-align: center;
+}
+
+.underline{
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(
+  to left, var(--clr-primary),
+  orange, var(--clr-primary));
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 960px){

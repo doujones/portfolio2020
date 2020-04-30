@@ -3,53 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>William Boswell</title>
-    <!-- Thumbnail image of Me  -->
+    <title>Blog</title>
     <link rel="shortcut icon" href="Images/me2.jpg">
-    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="/Users/doujones/Downloads/portfolio-setup/fontawesome-free-5.12.1-web/css/all.min.css"
-    >
-    <link rel="stylesheet" href="./Blog.css">
-    <link rel="stylesheet" href="./styles.css">
-    </head>
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./Blog.css" />
+  </head>
+
   <body>
-      <!--navbar-->
-      <nav class="nav top" id="nav">
-        <div class="nav-center">
-        <!--navbar header-->
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
         <div class="nav-header">
-          <h3 class="name-nav">William Boswell</h3>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li><a href="./Index.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Projects.html">Projects</a></li>
+          <li><a href="./Java.html">Java</a></li>
+        </ul>
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="index.html">Home Page</a>
-        </li>
-        <li>
-          <a href="Project.html">Projects</a>
-        </li>
-        <li>
-          <a href="biography.html">About</a>
-        </li>
-        <li>
-          <a href="blog.html">Blog</a>
-        </li>
-      </ul>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button id="close-btn" class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Project.html">Projects</a></li>
+          <li><a href="./Blog.html">Blog</a></li>
+          <li><a href="./Java.html">Java</a></li>
+          <!-- single item -->
+          <li>
+            <a href="https://www.linkedin.com/in/doujones" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <!-- end of single item -->
+        </ul>
       </div>
-       </nav>
-      <!--Nav Button End-->
-      <!-- Blog Begins-->
+    </aside>
+    <!-- end of sidebar -->
+     <!-- Blog Begins-->
       <section id="blog-section">
         <div class="container">
           <div class="title">
             <h1>Javascript Frameworks</h1>
           </div>
+           <div class="content-divider"></div>
           <div class="blog-container">
           <!--Post Beginning-->
             <a href="http://www.reactjs.org" class="post">
-              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+              <div class="post-img" style="background: url('./Images/reactjs.jpg');"></div>
                <div class="details">
                <h4>ReactJS</h4>
                <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug. Component-Based
@@ -64,7 +81,7 @@
             <!--End of Post-->
             <!--Post Beginning-->
             <a href="https://angular.io/" class="post">
-              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+              <div class="post-img" style="background: url('./Images/angular1.jpg');"></div>
                <div class="details">
                <h4>AngularJS</h4>
                <p>Angular is an app-design framework and development platform for creating efficient and sophisticated single-page apps.</p>
@@ -80,7 +97,7 @@
             <!--End of Post-->
             <!--Post Beginning-->
             <a href="https://nodejs.dev/" class="post">
-              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+              <div class="post-img" style="background: url('./Images/nodejs.jpg');"></div>
                <div class="details">
                <h4>Nodejs</h4>
                <p>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently. Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.</p>
@@ -96,7 +113,7 @@
             <!--End of Post-->
             <!--Post Beginning-->
             <a href="https://vuejs.org/" class="post">
-              <div class="post-img" style="background: url('./Images/JSFrameworks.jpg');"></div>
+              <div class="post-img" style="background: url('./Images/vuejs.jpeg');"></div>
                <div class="details">
                <h4>VueJs</h4>
                <p>Vue JS is a Javascript MVC Framework which is used to develop a UI layer of Web Applications. React JS is used for developing user interfaces of Web Applications and Mobile Applications. Not only this it is also used for developing Native Applications and also render on Server as a Node.</p> 
@@ -112,13 +129,20 @@
         </div>
       <section>
     <!-- Blog End-->
-    <footer>
-      <p>William Boswell &copy; All Rights Reserved</p><span id="date"></span>
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="social-icons">
+        <!-- single item -->
+        <li>
+          <a href="https://www.linkedin/in/doujones.com" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- end of single item -->
+      </ul>
+
+      <p>&copy; <span id="date"></span> William Boswell All Rights Reserved.</p>
     </footer>
-    <script>
-    // set year
-    const date = document.querySelector("#date");
-    date.innerHTML = new Date().getFullYear();
-    </script>
-    </body>
-    </html>
+    <script src="./app.js"></script>
+  </body>
+</html>
