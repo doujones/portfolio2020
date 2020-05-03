@@ -862,3 +862,36 @@ Java Extra Work
     gap: 3rem 1rem;
   }
 }
+
+@media screen and (max-width: 600px){
+  .container, .project{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));
+    justify-items: center;
+    column-gap: 2rem;
+    list-style-type: none;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    font-size: 1.2rem;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    place-items: center;
+    box-sizing: border-box;
+    font-size: 85%;
+    float: none;
+    padding: 0;
+  } 
+  .clock {
+    font-size: 2.8em;
+    padding-left: 50px;
+  }
+
+  .java{
+    float: none;
+    font-size: 85%;
+    padding: 0;
+    grid-template-columns: 1fr;
+    background: none;
+    display: grid;
+  }
+}
